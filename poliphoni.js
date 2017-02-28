@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         let texLoader = THREE.TextureLoader();
 
-        let geometry = new THREE.BoxGeometry( 1, 1, 1 );
-        //let material = new THREE.MeshPhongMaterial( { map: texLoader.load("images/nyc.jpg") } );
+        //let geometry = new THREE.BoxGeometry( 1, 1, 1 );
+        let material = new THREE.MeshPhongMaterial( { map: texLoader.load("images/nyc.jpg") } );
         let material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
         
         camera.position.z = 5;
